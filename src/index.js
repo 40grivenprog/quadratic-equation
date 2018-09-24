@@ -10,7 +10,7 @@ let c=s[7]+s[8];
  
 x1=(-b+Math.sqrt(b*b-4*a*c))/(2*a);
 x2=(-b-Math.sqrt(b*b-4*a*c))/(2*a);
-return [x2, x1];
+if (x1 < x2) return [x1, x2]; else return [x2, x1];
 
 }
 // solutions1 = solveEquation('-20 * x^2 - 108797540 * x - 130011773690520');
